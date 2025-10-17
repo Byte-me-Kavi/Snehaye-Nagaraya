@@ -22,10 +22,11 @@ body {
   font-family: var(--font-sinhala), system-ui, sans-serif;
 }
 
-.heart-fill {
-  mix-blend-mode: multiply;
+.heart-loader {
+  background: none !important;
+  isolation: isolate; /* prevents blending with parent background */
 }
 
-.heart-loader {
-  background-color: transparent !important;
+svg {
+  background: none !important;
 }

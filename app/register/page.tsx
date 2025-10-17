@@ -128,7 +128,7 @@ export default function Register() {
       setSubmitStatus({
         type: "success",
         message:
-          "✅ Registration received! We'll contact you soon with ticket information.",
+          "Registration received! We'll contact you soon with ticket information.",
       });
 
       // Clear form immediately

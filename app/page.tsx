@@ -54,7 +54,8 @@ export default function Home() {
                     Most Aniticipated Musical event of the Year
                   </h2>
                   <p className="text-sm md:text-base text-gray-700 text-center leading-relaxed">
-                    The stage awaits the echo of legends. An evening where music becomes eternal.
+                    The stage awaits the echo of legends. An evening where music
+                    becomes eternal.
                   </p>
                 </div>
 
@@ -199,7 +200,7 @@ export default function Home() {
                   <p className="text-sm text-gray-700 text-center">
                     Share this page with friends on WhatsApp, Facebook, or
                     Instagram. Use it as the official pre-registration page for
-                    "Snehaye Nagaraya".
+                    &ldquo;Snehaye Nagaraya&rdquo;.
                   </p>
                 </div>
               </div>
