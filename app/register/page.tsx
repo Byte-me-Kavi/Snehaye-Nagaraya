@@ -230,7 +230,7 @@ export default function Register() {
             </div>
 
             <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden border-2 border-pink-200 transition-all duration-300 hover:shadow-pink-200/50">
-              <div className="bg-gradient-to-r from-pink-500 via-pink-400 to-pink-500 text-white px-6 py-6 md:py-8 text-center">
+              <div className="bg-gradient-to-r from-pink-500 via-pink-700 to-pink-500 text-white px-6 py-6 md:py-8 text-center">
                 <div className="flex justify-center mb-3">
                   <Image
                     width={300}
