@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Snehaye Nagaraya - Live in Concert",
   description:
-    "Pre-register for Snehaye Nagaraya live concert featuring Amarasiri Peiris, Kasun Kalhara, Sunil Edirisinghe, Karunarathna Divulgane, and Shashika Nisansala at Musaeus College Auditorium on December 13, 2025",
+    "Pre-register for Snehaye Nagaraya live concert featuring best artists in srilanka at Musaeus College Auditorium on December 13, 2025 at 7.30 PM. onwards.",
 };
 
 export default function RootLayout({
