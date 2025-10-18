@@ -15,10 +15,27 @@ interface FallingItem {
 
 export default function HeartsRain() {
   const [items, setItems] = useState<FallingItem[]>([]);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detect mobile device
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     // Generate 20 items (hearts and music notes)
-    const itemCount = 20;
+    const itemCount = 5;
+
+    // Mobile: smaller sizes (12-24px), Desktop: larger sizes (28-56px)
+    const minSize = isMobile ? 12 : 28;
+    const sizeRange = isMobile ? 12 : 28;
 
     const newItems: FallingItem[] = Array.from(
       { length: itemCount },
@@ -48,7 +65,7 @@ export default function HeartsRain() {
           left: Math.random() * 100,
           animationDuration: 4 + Math.random() * 5, // 4-9 seconds
           animationDelay: Math.random() * 3, // Stagger within 3 seconds
-          size: 28 + Math.random() * 28, // 28-56px (20% bigger: was 24-48px)
+          size: minSize + Math.random() * sizeRange, // Responsive sizing
           type,
           pathType,
           horizontalMovement: 30 + Math.random() * 70, // 30-100px horizontal movement
@@ -57,7 +74,7 @@ export default function HeartsRain() {
     );
 
     setItems(newItems);
-  }, []);
+  }, [isMobile]);
 
   const getItemContent = (type: string) => {
     if (type === "heart-red") {
