@@ -31,7 +31,7 @@ export default function HeartsRain() {
 
   useEffect(() => {
     // Generate 20 items (hearts and music notes)
-    const itemCount = 5;
+    const itemCount = 10;
 
     // Mobile: smaller sizes (12-24px), Desktop: larger sizes (28-56px)
     const minSize = isMobile ? 12 : 28;
