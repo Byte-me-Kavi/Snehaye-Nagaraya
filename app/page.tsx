@@ -3,11 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import LoadingScreen from "./components/LoadingScreen";
+import HeartsRain from "./components/HeartsRain";
 
 export default function Home() {
   return (
     <>
       <LoadingScreen />
+      <HeartsRain />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-pink-100">
         {/* Hero Section */}
         <div className="container mx-auto px-4 py-8 md:py-12">
@@ -42,10 +44,9 @@ export default function Home() {
                 <div className="text-center mb-6">
                   <p className="text-xl md:text-2xl sinhala-text text-pink-700 font-medium leading-relaxed mb-2">
                     ප්‍රේමණීය සිත්සතන් ස්නේහයෙන්
-
                   </p>
                   <p className="text-xl md:text-2xl sinhala-text text-pink-700 font-medium leading-relaxed">
-                     මුණගස්සන මායාකාරී හවස් වරුව ❤
+                    මුණගස්සන මායාකාරී හවස් වරුව ❤
                   </p>
                 </div>
 

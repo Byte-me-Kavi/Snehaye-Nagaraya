@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LoadingScreen from "../components/LoadingScreen";
+import HeartsRain from "../components/HeartsRain";
 
 export default function Register() {
   const [formData, setFormData] = useState({
@@ -192,6 +193,7 @@ export default function Register() {
   return (
     <>
       <LoadingScreen />
+      <HeartsRain />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-pink-100 relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
