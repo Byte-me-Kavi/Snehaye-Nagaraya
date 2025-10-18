@@ -41,10 +41,11 @@ export default function Home() {
                 {/* Tagline */}
                 <div className="text-center mb-6">
                   <p className="text-xl md:text-2xl sinhala-text text-pink-700 font-medium leading-relaxed mb-2">
-                    කදුකරයේ සීතලෙන් මුසපත් වී
+                    ප්‍රේමණීය සිත්සතන් ස්නේහයෙන්
+
                   </p>
                   <p className="text-xl md:text-2xl sinhala-text text-pink-700 font-medium leading-relaxed">
-                    ස්නේහයෙන් උණුසුම් වෙන්න ❤
+                     මුණගස්සන මායාකාරී හවස් වරුව ❤
                   </p>
                 </div>
 
